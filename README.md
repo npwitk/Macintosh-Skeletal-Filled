@@ -98,8 +98,9 @@ slider is in the same panel.
 }
 ```
 
-Keep **Contextual Alternates** on (it is by default): every join in these
-fonts depends on it. Apps that don't apply it draw each letter on its own.
+Keep **Contextual Alternates** and **Ligatures** on (they are by default):
+the joins are under both, so apps that apply either one join the letters.
+Turn both off and each letter stands on its own.
 
 ## The o
 
@@ -191,17 +192,18 @@ new font.
 ## Troubleshooting
 
 **Letters don't join, or there are blobs where they should join.** Every
-join in these fonts comes from an OpenType feature called *contextual
-alternates*. Make sure it's on:
+join in these fonts comes from OpenType features: *contextual
+alternates*, and (for apps that only offer that) *ligatures*. Make sure
+they're on:
 
 - **Pages, Keynote, TextEdit:** ⌘T › **⋯** › **Typography…** › **Contextual
   Alternates** should be ticked (it is by default).
 - **Figma:** Type settings › **Details** › **Contextual alternates** should
   be on.
-- **After Effects:** its default text engine doesn't apply contextual
-  alternates. Try Preferences › Type › Text Engine › **South Asian and
-  Middle Eastern**, then make a new text layer, or set the text in Figma or
-  Illustrator and bring it in as shapes.
+- **After Effects:** tick **Ligatures** in the Character panel (on by
+  default). If the letters still don't join, remove any older copy of the
+  font: versions before this one only had the joins under contextual
+  alternates, which After Effects doesn't apply.
 
 **The font, or its options, don't show up.** Check that the font is enabled
 in Font Book and remove any older copy first (including the old
