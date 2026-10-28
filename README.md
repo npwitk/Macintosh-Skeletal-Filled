@@ -130,6 +130,54 @@ the bowl and leaves through it. These fonts bring that 2020 `o` back as the
 [Crossing o](#crossing-o) option, drawn from Apple's greeting and joined
 with the fonts' own joins.
 
+## Hello in every language
+
+![Hello and welcome in 21 scripts](images/hellos.png)
+
+Apple's font also writes "hello" and "welcome" in scripts it has no letters
+for: Thai, Japanese, Chinese, Korean, Arabic, Urdu, Hebrew, Sinhala and
+eleven Indian scripts. Each greeting is a single hand-drawn glyph, and these
+fonts keep them. There's nothing to switch on: type the whole word (or copy
+it from the table) and it becomes the drawing when you finish the last
+letter. Greetings in Latin, Greek and Cyrillic are ordinary joined letters,
+so any word works there.
+
+| Language | Hello | Welcome |
+|---|---|---|
+| Thai | สวัสดี | ยินดีต้อนรับ |
+| Japanese | こんにちは | ようこそ |
+| Korean | 안녕하세요 | 환영합니다 or 시작하기 |
+| Chinese (Simplified) | 你好 | 欢迎使用 |
+| Chinese (Taiwan) | 哈囉 | 歡迎使用 |
+| Chinese (Hong Kong) | 哈佬 | 歡迎使用 |
+| Hindi | नमस्ते | स्वागत है |
+| Marathi | नमस्कार | सुस्वागतम् |
+| Bangla | | স্বাগতম |
+| Gujarati | નમસ્તે | સ્વાગત |
+| Punjabi | ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ | ਜੀ ਆਇਆਂ ਨੂੰ |
+| Odia | ନମସ୍କାର | ସ୍ୱାଗତ |
+| Kannada | ನಮಸ್ಕಾರ | ಸುಸ್ವಾಗತ |
+| Malayalam | നമസ്കാരം | സ്വാഗതം |
+| Tamil | வணக்கம் | நல்வரவு |
+| Telugu | నమస్కారం | స్వాగతం |
+| Manipuri (Meetei Mayek) | ꯈꯨꯔꯨꯝꯖꯔꯤ | ꯇꯔꯥꯝꯅ ꯑꯣꯛꯆꯔꯤ |
+| Santali (Ol Chiki) | ᱡᱚᱦᱟᱨ | ᱥᱟᱹᱜᱩᱱ ᱫᱟᱨᱟᱢ |
+| Sinhala | ආයුබෝවන් | සාදරයෙන් පිළිගන්නවා |
+| Arabic | مرحبًا | |
+| Urdu | آداب | خوش آمدید |
+| Hebrew | שלום | ברוכים הבאים |
+
+- The word has to match exactly. The fonts have no single letters in these
+  scripts, so the letters stay invisible until the word is complete, and
+  other text in these scripts needs another font.
+- Apple drew the Manipuri, Santali and Sinhala greetings but never connected
+  them to any text, and its Punjabi hello only worked in Apple's apps. These
+  fonts connect them all, in Pages, Keynote and TextEdit as well as Figma
+  and browsers.
+- Malayalam has a second hello, with സ and ക stacked. Switch on **Stacked
+  Malayalam hello** where you switch on the [options](#how-to-switch-them-on)
+  (`ss03` in CSS).
+
 ## Why some letters don't join
 
 The coloured strokes in the [image above](#join-every-letter) are the joins
@@ -215,6 +263,12 @@ in Font Book and remove any older copy first (including the old
 *Macintosh Skeletal Variable Joined*), then quit the app completely and
 reopen it. The options are only in the fonts from this repository, not in
 Apple's own *Macintosh Skeletal*.
+
+**A greeting in Thai, Hindi, Japanese, ... shows nothing.** In these
+scripts the fonts only have the whole words in
+[Hello in every language](#hello-in-every-language). Copy the word from the
+table so it matches exactly. Any other text in these scripts needs another
+font.
 
 **Pages or Keynote shows no weights.** Install the latest
 `MacintoshSkeletalVariable.otf` from this repository; older builds were
