@@ -33,13 +33,18 @@ Weight is the pen thickness. Apple's renderer draws the font's strokes at
 | Style | `wght` | Pen thickness |
 |---|---|---|
 | Thin | 100 | 0.6× |
-| Light | 270 | 1.0× (the raw font data) |
-| **Regular** | **500** | **1.55× (Apple's hello screen)** |
-| Bold | 690 | 2.0× |
+| ExtraLight | 200 | 0.92× |
+| Light | 300 | 1.23× |
+| **Regular** | **400** | **1.55× (Apple's hello screen)** |
+| Medium | 500 | 1.74× |
+| SemiBold | 600 | 1.93× |
+| Bold | 700 | 2.12× |
+| ExtraBold | 800 | 2.31× |
 | Black | 900 | 2.5× |
 
-Any value in between works. Thickness is linear in `wght`, so every app shows
-the same result.
+Any value in between works. Thickness is linear in `wght` from Thin to
+Regular and from Regular to Black, so every app shows the same result.
+(Before this version Regular was `wght` 500, Light 270 and Bold 690.)
 
 ### Static or variable?
 
